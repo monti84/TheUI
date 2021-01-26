@@ -1,0 +1,21 @@
+.accordion-container > .accordion-header .icon {
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.accordion-container > .accordion-header .icon {
+    transition: rotate 300ms;
+}
+
+.accordion-container.opened > .accordion-header .icon {
+    transform: rotate(180deg);
+}
+
+.accordion-container:not(.opened) > .accordion-content {
+    display: none;
+}

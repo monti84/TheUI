@@ -2,12 +2,40 @@
 <html>
 	<head>
 	    <meta charset="utf-8" />
-	    <title></title>
+		<title>TheUI</title>
 	    <meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" href="data:;base64,iVBORwOKGO=" />
 	    <link rel="stylesheet" href="https://monti84.github.io/TheGrid/assets/css/normalize.css" />
 	    <link rel="stylesheet" href="https://monti84.github.io/TheGrid/assets/css/grid.css" />
-	    <link rel="stylesheet" href="assets/css/form.css" />
+		<link rel="stylesheet" href="assets/css/accordion.css" />
 		<link rel="stylesheet" href="assets/css/demo.css" />
 	</head>
 
 	<body>
+		<div class="accordion-container mb-15">
+			<div class="accordion-header flex-container flex-vcenter">
+				<div class="title flex-col flex-grow flex-shrink">Accordion title</div>
+				<div class="icon flex-col"><img width="24" height="24" src="assets/images/chevron-down.svg"></div>
+			</div>
+			<div class="accordion-content">
+				<p>
+					<a href="https://iconscout.com/icons/chevron-down" target="_blank">Chevron Down Icon</a> by <a href="https://iconscout.com/contributors/eva-icons">Eva Icons</a> on <a href="https://iconscout.com">Iconscout</a>
+				</p>
+			</div>
+		</div>
+		
+		<div class="accordion-container opened">
+			<div class="accordion-header flex-container flex-vcenter">
+				<div class="title flex-col flex-grow flex-shrink">Accordion title</div>
+				<div class="icon flex-col"><img width="24" height="24" src="assets/images/chevron-down.svg"></div>
+			</div>
+			<div class="accordion-content">
+				<p>
+					<a href="https://iconscout.com/icons/chevron-down" target="_blank">Chevron Down Icon</a> by <a href="https://iconscout.com/contributors/eva-icons">Eva Icons</a> on <a href="https://iconscout.com">Iconscout</a>
+				</p>
+			</div>
+		</div>
+		<script src="assets/js/theui.js"></script>
+		<script src="assets/js/theui.accordion.js"></script>
+	</body>
+</html>
