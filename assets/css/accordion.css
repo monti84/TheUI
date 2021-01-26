@@ -9,7 +9,7 @@
 }
 
 .accordion-container > .accordion-header .icon {
-    transition: rotate 300ms;
+    transition: transform 300ms;
 }
 
 .accordion-container.opened > .accordion-header .icon {
