@@ -1,4 +1,4 @@
-.accordion-container > .accordion-header .icon {
+.accordion-container .accordion-button {
     cursor: pointer;
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -8,11 +8,18 @@
     user-select: none;
 }
 
-.accordion-container > .accordion-header .icon {
+.accordion-container .accordion-button:hover .icon,
+.accordion-container .accordion-button.icon:hover {
+    opacity: 0.5;
+}
+
+.accordion-container .accordion-button .icon,
+.accordion-container .accordion-button.icon {
     transition: transform 300ms;
 }
 
-.accordion-container.opened > .accordion-header .icon {
+.accordion-container.opened .accordion-button .icon,
+.accordion-container.opened .accordion-button.icon {
     transform: rotate(180deg);
 }
 

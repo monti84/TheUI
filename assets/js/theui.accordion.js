@@ -2,7 +2,9 @@ TheUI.Accordion = {
 	Init () {
 		let accordions = document.querySelectorAll('.accordion-container');
 		accordions.forEach((accordionContainer) => {
-			accordionContainer.querySelector('.accordion-header .icon').addEventListener('click', (event) => {
+			let button = accordionContainer.querySelector('.accordion-button')
+			if (button === null) return true;
+			button.addEventListener('click', (event) => {
 				accordionContainer.classList.toggle('opened');
 			});		
 		});
