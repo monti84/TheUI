@@ -10,15 +10,17 @@
 
 .slider-container .slider-prev,
 .slider-container .slider-next {
-    width: 6px;
-    height: 10px;
+    width: 12px;
+    height: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     transition: all 0.3s;
     cursor: pointer;
     z-index: 1;
-    background-size: 6px 10px;
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
 }
 
 .slider-container .slider-prev:hover,
@@ -28,13 +30,13 @@
 
 
 .slider-container .slider-prev {
-    background: url('../images/chevron-left.svg') no-repeat 0 0;
+    background-image: url('../images/chevron-left.svg');
     transform: translateX(calc(-100% - 5px)) translateY(50%);
     left: 5px;
 }
 
 .slider-container .slider-next {
-    background: url('../images/chevron-right.svg') no-repeat 0 0;
+    background-image: url('../images/chevron-right.svg');
     transform: translateX(calc(100% + 5px)) translateY(50%);
     right: 5px;
 }
