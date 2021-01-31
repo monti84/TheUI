@@ -6,6 +6,7 @@
 .slider-container .slides {
     width: 100%;
     transition: all 0.5s;
+    align-items: flex-start;
 }
 
 .slider-container .slider-prev,
@@ -31,17 +32,17 @@
 
 .slider-container .slider-prev {
     background-image: url('../images/chevron-left.svg');
-    transform: translateX(calc(-100% - 5px)) translateY(50%);
+    transform: translateX(calc(-100% - 5px)) translateY(-50%);
     left: 5px;
 }
 
 .slider-container .slider-next {
     background-image: url('../images/chevron-right.svg');
-    transform: translateX(calc(100% + 5px)) translateY(50%);
+    transform: translateX(calc(100% + 5px)) translateY(-50%);
     right: 5px;
 }
 
 .slider-container:hover .slider-prev,
 .slider-container:hover .slider-next {
-    transform: translateX(0) translateY(50%);
+    transform: translateX(0) translateY(-50%);
 }
