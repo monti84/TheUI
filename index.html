@@ -9,6 +9,7 @@
 	    <link rel="stylesheet" href="https://monti84.github.io/TheGrid/assets/css/grid.css" />
 		<link rel="stylesheet" href="assets/css/accordion.css" />
 		<link rel="stylesheet" href="assets/css/slider.css" />
+		<link rel="stylesheet" href="assets/css/modal.css" />
 		<link rel="stylesheet" href="assets/css/demo.css" />
 	</head>
 
@@ -38,30 +39,95 @@
 		</div>
 
 		<div class="slider-container">
-			<div class="slides">
-				<div class="slide">
+			<div class="slides full-width">
+				<div class="slide full-width">
 					<h1>Some title1</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros. Nam rhoncus condimentum tempus. Nunc sit amet elementum nulla. Etiam vehicula nulla id diam finibus varius. Pellentesque iaculis cursus purus, pulvinar condimentum enim mollis a. Proin sed nibh sapien. Aenean elementum placerat arcu a porta. Donec iaculis faucibus risus eget euismod. Duis varius tempor odio, nec lacinia nibh interdum non. Nulla tristique eleifend nunc, sed feugiat tortor. Vestibulum eleifend lorem quis ex dictum iaculis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros. Nam rhoncus condimentum tempus. Nunc sit amet elementum nulla. Etiam vehicula nulla id diam <a href="#" data-modal_target_id="modal-1">Open modal 1</a> finibus varius. Pellentesque iaculis cursus purus, pulvinar condimentum enim mollis a. Proin sed nibh sapien. Aenean  <a href="#" data-modal_target_id="modal-2">Open modal 2</a> elementum placerat arcu a porta. Donec iaculis faucibus risus eget euismod. Duis varius tempor odio, nec lacinia nibh interdum non. Nulla tristique eleifend nunc, sed feugiat tortor. Vestibulum eleifend lorem quis ex dictum iaculis.</p>
 				</div>
 				
-				<div class="slide">
+				<div class="slide full-width">
 					<h1>Some title2</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros. Nam rhoncus condimentum tempus. Nunc sit amet elementum nulla. Etiam vehicula nulla id diam finibus varius.</p>
 				</div>
 				
-				<div class="slide">
+				<div class="slide full-width">
 					<h1>Some title3</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros.</p>
 				</div>
 				
-				<div class="slide">
+				<div class="slide full-width">
 					<h1>Some title4</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros. Nam rhoncus condimentum tempus. Nunc sit amet elementum nulla. Etiam vehicula nulla id diam finibus varius. Pellentesque iaculis cursus purus, pulvinar condimentum enim mollis a. Proin sed nibh sapien. Aenean elementum placerat arcu a porta. Donec iaculis faucibus risus eget euismod. Duis varius tempor odio, nec lacinia nibh interdum non. Nulla tristique eleifend nunc, sed feugiat tortor. Vestibulum eleifend lorem quis ex dictum iaculis.</p>
 				</div>
 			</div>
 		</div>
+		
+		<div class="slider-container">
+			<div class="slides">
+				<div class="slide third-width">
+					<img width="300" height="150" src="https://dummyimage.com/300x150/000/fff">
+				</div>
+				
+				<div class="slide third-width">
+					<img width="300" height="150" src="https://dummyimage.com/300x150/000/fff">
+				</div>
+				
+				<div class="slide third-width">
+					<img width="300" height="150" src="https://dummyimage.com/300x150/000/fff">
+				</div>				
+				<div class="slide third-width">
+					<img width="300" height="150" src="https://dummyimage.com/300x150/000/fff">
+				</div>
+				
+				<div class="slide third-width">
+					<img width="300" height="150" src="https://dummyimage.com/300x150/000/fff">
+				</div>
+				
+				<div class="slide third-width">
+					<img width="300" height="150" src="https://dummyimage.com/300x150/000/fff">
+				</div>				
+			</div>
+		</div>
+
+		<div class="modal-container flex-container flex-dir-column" data-modal_id="modal-1">
+			<div class="modal-header flex-col flex-container flex-vcenter">
+				<div class="modal-title flex-col flex-grow flex-shrink">Lorem ipsum</div>
+				<div class="modal-close flex-col">X</div>
+			</div>
+			<div class="modal-content flex-col flex-grow flex-shrink">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus diam, gravida sagittis lacinia nec, maximus non sapien. Proin iaculis, quam eget sodales interdum, ligula libero gravida odio, et porttitor ipsum neque sit amet ex. Integer id tortor ipsum. Duis sit amet condimentum mauris. Etiam dignissim ligula metus, et congue dolor finibus eu. In hac habitasse platea dictumst. Donec iaculis ipsum sit amet neque gravida efficitur. Suspendisse ultrices consectetur commodo. Nam commodo sem vel enim venenatis, eget pharetra nisi tempus. Suspendisse molestie, mi sit amet facilisis bibendum, ligula felis pharetra nisi, eget imperdiet tellus arcu nec quam. Morbi ut volutpat nunc. Aliquam sit amet risus posuere, efficitur enim non, vestibulum lacus. Vivamus convallis tristique molestie. Ut tincidunt tellus at porta ornare. Suspendisse lobortis vulputate elit.</p>
+
+				<p>Integer sit amet felis vel elit laoreet cursus a nec urna. Pellentesque sit amet iaculis arcu. Vestibulum dictum justo non lacinia facilisis. Vestibulum vel sapien eget nibh gravida luctus. Ut aliquam mauris non metus iaculis, ut lobortis nulla facilisis. Ut velit lectus, faucibus in ultricies eget, imperdiet ut ante. Cras vel hendrerit ligula. Quisque quam diam, pulvinar vitae laoreet id, fermentum sit amet nisl. In auctor elit eget elit aliquam, in pellentesque orci elementum. Quisque maximus velit eget ipsum aliquet, nec finibus risus pharetra. Suspendisse congue tincidunt finibus.</p>
+
+				<p>Nunc vel dui nec lectus gravida porttitor nec at ipsum. Vestibulum congue leo eget imperdiet malesuada. Cras id nisl non nunc vulputate interdum ut vel purus. In et finibus leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent fringilla leo et porttitor porta. Maecenas et tincidunt lectus.</p>
+
+				<p>Proin bibendum orci in purus rutrum porta. Duis pretium nulla elementum eros suscipit elementum. Curabitur ultrices laoreet vulputate. Integer dictum ex ut tellus efficitur auctor. Aenean nisl nulla, lobortis ut euismod a, tincidunt a erat. Proin tristique ipsum vitae est sodales vulputate. Proin scelerisque viverra est, eget malesuada quam cursus faucibus. Morbi eros tortor, euismod nec sollicitudin ut, scelerisque eget purus. Aliquam quis nulla sed ipsum interdum maximus et sed eros. Suspendisse potenti. Aenean laoreet vel tellus a lobortis.</p>
+
+				<p>Nunc sodales varius massa quis blandit. Cras dui quam, faucibus at nisi vitae, faucibus sagittis nulla. Ut luctus placerat ornare. Ut nec consectetur lacus. Nam id ante odio. Praesent nibh odio, molestie sed sodales non, tincidunt eu ligula. Morbi varius porta sem in ullamcorper. Vivamus augue nunc, tempor sit amet ornare in, tincidunt a est. Nulla eu convallis mi, et egestas nisi. Nunc laoreet dui urna, eu viverra felis venenatis ut. In hac habitasse platea dictumst. Sed elementum condimentum lacus nec ornare. Phasellus ut velit congue ante convallis auctor ac quis tortor. Nullam laoreet massa sed molestie feugiat.</p>	
+			</div>
+		</div>
+		
+		<div class="modal-container flex-container flex-dir-column" data-modal_id="modal-2" data-modal_settings='{"CloseOnBackDropClick": false}'>
+			<div class="modal-header flex-col flex-container flex-vcenter">
+				<div class="modal-title flex-col flex-grow flex-shrink">Lorem ipsum</div>
+				<div class="modal-close flex-col">X</div>
+			</div>
+			<div class="modal-content flex-col flex-grow flex-shrink">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lacus diam, gravida sagittis lacinia nec, maximus non sapien. Proin iaculis, quam eget sodales interdum, ligula libero gravida odio, et porttitor ipsum neque sit amet ex. Integer id tortor ipsum. Duis sit amet condimentum mauris. Etiam dignissim ligula metus, et congue dolor finibus eu. In hac habitasse platea dictumst. Donec iaculis ipsum sit amet neque gravida efficitur. Suspendisse ultrices consectetur commodo. Nam commodo sem vel enim venenatis, eget pharetra nisi tempus. Suspendisse molestie, mi sit amet facilisis bibendum, ligula felis pharetra nisi, eget imperdiet tellus arcu nec quam. Morbi ut volutpat nunc. Aliquam sit amet risus posuere, efficitur enim non, vestibulum lacus. Vivamus convallis tristique molestie. Ut tincidunt tellus at porta ornare. Suspendisse lobortis vulputate elit.</p>
+
+				<p>Integer sit amet felis vel elit laoreet cursus a nec urna. Pellentesque sit amet iaculis arcu. Vestibulum dictum justo non lacinia facilisis. Vestibulum vel sapien eget nibh gravida luctus. Ut aliquam mauris non metus iaculis, ut lobortis nulla facilisis. Ut velit lectus, faucibus in ultricies eget, imperdiet ut ante. Cras vel hendrerit ligula. Quisque quam diam, pulvinar vitae laoreet id, fermentum sit amet nisl. In auctor elit eget elit aliquam, in pellentesque orci elementum. Quisque maximus velit eget ipsum aliquet, nec finibus risus pharetra. Suspendisse congue tincidunt finibus.</p>
+
+				<p>Nunc vel dui nec lectus gravida porttitor nec at ipsum. Vestibulum congue leo eget imperdiet malesuada. Cras id nisl non nunc vulputate interdum ut vel purus. In et finibus leo. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Praesent fringilla leo et porttitor porta. Maecenas et tincidunt lectus.</p>
+
+				<p>Proin bibendum orci in purus rutrum porta. Duis pretium nulla elementum eros suscipit elementum. Curabitur ultrices laoreet vulputate. Integer dictum ex ut tellus efficitur auctor. Aenean nisl nulla, lobortis ut euismod a, tincidunt a erat. Proin tristique ipsum vitae est sodales vulputate. Proin scelerisque viverra est, eget malesuada quam cursus faucibus. Morbi eros tortor, euismod nec sollicitudin ut, scelerisque eget purus. Aliquam quis nulla sed ipsum interdum maximus et sed eros. Suspendisse potenti. Aenean laoreet vel tellus a lobortis.</p>
+
+				<p>Nunc sodales varius massa quis blandit. Cras dui quam, faucibus at nisi vitae, faucibus sagittis nulla. Ut luctus placerat ornare. Ut nec consectetur lacus. Nam id ante odio. Praesent nibh odio, molestie sed sodales non, tincidunt eu ligula. Morbi varius porta sem in ullamcorper. Vivamus augue nunc, tempor sit amet ornare in, tincidunt a est. Nulla eu convallis mi, et egestas nisi. Nunc laoreet dui urna, eu viverra felis venenatis ut. In hac habitasse platea dictumst. Sed elementum condimentum lacus nec ornare. Phasellus ut velit congue ante convallis auctor ac quis tortor. Nullam laoreet massa sed molestie feugiat.</p>	
+			</div>
+		</div>
+
 		<script src="assets/js/theui.js"></script>
 		<script src="assets/js/theui.accordion.js"></script>
 		<script src="assets/js/theui.slider.js"></script>
+		<script src="assets/js/theui.modal.js"></script>
 	</body>
 </html>

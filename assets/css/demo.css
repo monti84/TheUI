@@ -25,14 +25,24 @@
     border: 1px solid #f0f0f0;
 }
 
-.slider-container .slides {
-    display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
-}
 
 .slider-container .slides .slide {
-    width: 100%;
-    flex: 0 0 auto;
     padding: 5px 25px;
 }
+
+.slider-container .slide img {
+    max-width: 100%;
+}
+
+.modal-container {
+    width: 600px;
+}
+
+.modal-close {
+    cursor: pointer;
+}
+
+a {
+    color: red;
+}
+

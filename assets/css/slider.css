@@ -4,9 +4,17 @@
 }
 
 .slider-container .slides {
-    width: 100%;
     transition: all 0.5s;
     align-items: flex-start;
+}
+
+.slider-container .slides .slide {
+    flex: 0 0 auto;
+}
+
+.slider-container .slides {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 .slider-container .slider-prev,

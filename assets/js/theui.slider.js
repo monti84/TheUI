@@ -19,17 +19,16 @@ TheUI.Slider = {
 	},
 	
 	SlideTo(IndexOrDirection, sliderContainer) {
-		console.log(IndexOrDirection);
-		var currentIndex = 0;
+		let currentIndex = 0;
 		if (sliderContainer.querySelector('.slides').style.transform) currentIndex = parseInt(new RegExp(/translateX\((-)*(\d*)\%\)/ig).exec(sliderContainer.querySelector('.slides').style.transform)[2] / 100);
-		var totalSlides = sliderContainer.querySelectorAll('.slides > .slide').length;
+		let totalSlides = sliderContainer.querySelectorAll('.slides > .slide').length;
 		if (currentIndex === null) currentIndex = 0;
 		if (IndexOrDirection === 'prev') currentIndex--;
 		if (IndexOrDirection === 'next') currentIndex++;
 		if (typeof IndexOrDirection === "number") currentIndex = IndexOrDirection;
 		if (currentIndex < 0) currentIndex = totalSlides - 1;
 		if (currentIndex > (totalSlides - 1)) currentIndex = 0;
-		var TranslateXValue = 'translateX(' + (currentIndex * -100) + '%)';
+		let TranslateXValue = 'translateX(' + (currentIndex * -100) + '%)';
 		sliderContainer.querySelector('.slides').style.transform = TranslateXValue;
 	}
 }
