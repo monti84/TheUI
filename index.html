@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="assets/css/accordion.css" />
 		<link rel="stylesheet" href="assets/css/slider.css" />
 		<link rel="stylesheet" href="assets/css/modal.css" />
+		<link rel="stylesheet" href="assets/css/overlay.css" />
 		<link rel="stylesheet" href="assets/css/demo.css" />
 	</head>
 
@@ -42,7 +43,7 @@
 			<div class="slides full-width">
 				<div class="slide full-width">
 					<h1>Some title1</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros. Nam rhoncus condimentum tempus. Nunc sit amet elementum nulla. Etiam vehicula nulla id diam <a href="#" data-modal_target_id="modal-1">Open modal 1</a> finibus varius. Pellentesque iaculis cursus purus, pulvinar condimentum enim mollis a. Proin sed nibh sapien. Aenean  <a href="#" data-modal_target_id="modal-2">Open modal 2</a> elementum placerat arcu a porta. Donec iaculis faucibus risus eget euismod. Duis varius tempor odio, nec lacinia nibh interdum non. Nulla tristique eleifend nunc, sed feugiat tortor. Vestibulum eleifend lorem quis ex dictum iaculis.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" data-overlay_target_id="overlay-1">Show overlay 1.</a> Nam malesuada, quam a sagittis pharetra, nibh diam dignissim est, ac semper nisl ante ac eros. Nam rhoncus condimentum tempus. Nunc sit amet elementum nulla. Etiam vehicula nulla id diam <a href="#" data-modal_target_id="modal-1">Open modal 1</a> finibus varius. Pellentesque iaculis cursus purus, pulvinar condimentum enim mollis a. Proin sed nibh sapien. Aenean  <a href="#" data-modal_target_id="modal-2">Open modal 2</a> elementum placerat arcu a porta. Donec iaculis faucibus risus eget euismod. Duis varius tempor odio, nec lacinia nibh interdum non. Nulla tristique eleifend nunc, sed feugiat tortor. Vestibulum eleifend lorem quis ex dictum iaculis.</p>
 				</div>
 				
 				<div class="slide full-width">
@@ -119,14 +120,23 @@
 					<button class="button cancel-button modal-close">Cancel</button>
 				</div>
 				<div class="flex-col block-right">
-					<button class="button ok-button" data-modal_target_id="modal-1">OK</button>
+					<button class="button ok-button" data-modal_target_id="modal-1">OK, show modal 1</button>
 				</div>
 			</div>
+		</div>
+
+		<div class="overlay-container" data-overlay_id="overlay-1">
+			<div class="overlay-header flex-container flex-vcenter">
+				<div class="title flex-col flex-grow flex-shrink">Overlay-1</div>
+				<div class="flex-col overlay-close">X</div>
+			</div>
+			<p>Integer sit amet felis vel elit laoreet cursus a nec urna. Pellentesque sit amet iaculis arcu. Vestibulum dictum justo non lacinia facilisis. Vestibulum vel sapien eget nibh gravida luctus. Ut aliquam mauris non metus iaculis, ut lobortis nulla facilisis. Ut velit lectus, faucibus in ultricies eget, imperdiet ut ante. Cras vel hendrerit ligula. Quisque quam diam, pulvinar vitae laoreet id, fermentum sit amet nisl. In auctor elit eget elit aliquam, in pellentesque orci elementum. Quisque maximus velit eget ipsum aliquet, nec finibus risus pharetra. Suspendisse congue tincidunt finibus.</p>
 		</div>
 
 		<script src="assets/js/theui.js"></script>
 		<script src="assets/js/theui.accordion.js"></script>
 		<script src="assets/js/theui.slider.js"></script>
 		<script src="assets/js/theui.modal.js"></script>
+		<script src="assets/js/theui.overlay.js"></script>
 	</body>
 </html>

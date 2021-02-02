@@ -6,37 +6,39 @@ TheUI.Modal = {
 	Init () {
 		document.addEventListener("keydown", event => {
 			if (event.code === 'Escape') {
-				let openedModalID = this.GetOpenedModalID();
-				if (openedModalID === '') return true; 
-				let modalSettings = this.GetSettings(openedModalID);
+				let openedModalId = this.GetOpenedModalID();
+				if (openedModalId === '') return true; 
+				let modalSettings = this.GetSettings(openedModalId);
 				if (modalSettings.CloseOnEscape === true) this.CloseModal();
 				event.preventDefault();
 			  	event.stopPropagation;
 			}
-		  });
-		let modalContainers = document.querySelectorAll('.modal-container');
+		});
+
 		let modalSummonerButtons = document.querySelectorAll('*[data-modal_target_id]');		
 		modalSummonerButtons.forEach((modalSummonerButton) => {
 			modalSummonerButton.addEventListener('click', (event) => {
 				let modalId = modalSummonerButton.getAttribute('data-modal_target_id')
 				this.OpenModal(modalId);
+				event.preventDefault();
+			  	event.stopPropagation;
 			});
 		});
 	},	
 
-	OpenModal(id) {
+	OpenModal(modalId) {
 		let backDrop = document.createElement('div');
-		let modalContainer = document.querySelector('*[data-modal_id="' + id + '"]');
-		if (modalContainer === null) { console.info('Modal window not found with the specified id: "' + id + '".'); return false; }
+		let modalContainer = document.querySelector('*[data-modal_id="' + modalId + '"]');
+		if (modalContainer === null) { console.info('Modal window not found with the specified id: "' + modalId + '".'); return false; }
 		let modalClone = modalContainer.cloneNode(true);
 		let closeButtons = modalClone.querySelectorAll('.modal-close');
 		let body = document.querySelector('body');
-		let modalSettings = this.GetSettings(id);
+		let modalSettings = this.GetSettings(modalId);
 		
 		if (modalSettings.CloseOnBackDropClick === true) backDrop.addEventListener('click', (event) => { this.CloseModal(); });
 
 		closeButtons.forEach((button) => {
-			button.addEventListener('click', (event) => { this.CloseModal(id) });
+			button.addEventListener('click', (event) => { this.CloseModal(modalId) });
 		});
 
 		let modalSummonerButtons = modalClone.querySelectorAll('*[data-modal_target_id]');		

@@ -1,0 +1,14 @@
+.overlay-container {
+    position: absolute;
+    opacity: 0;
+    display: none;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.overlay-container.opened {
+    display: block;
+    opacity: 1;
+}
