@@ -103,6 +103,11 @@ button:hover {
     color: #fff;
 }
 
+*[data-modal_target_id].modal-opened {
+    color: orange;
+}
+
+
 /* Overlay */
 .overlay-container {
     max-width: 300px;
@@ -113,6 +118,6 @@ body {
     position: relative;
 }
 
-a[data-overlay_target_id].overlay-opened {
-    color: #000;
+*[data-overlay_target_id].overlay-opened {
+    color: orange;
 }
